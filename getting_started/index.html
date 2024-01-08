@@ -1,0 +1,365 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../api_reference/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.10">
+    
+    
+      
+        <title>Getting Started - Diffie-Hellman Key Exchange</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Diffie-Hellman Key Exchange" class="md-header__button md-logo" aria-label="Diffie-Hellman Key Exchange" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diffie-Hellman Key Exchange
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Diffie-Hellman Key Exchange" class="md-nav__button md-logo" aria-label="Diffie-Hellman Key Exchange" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Diffie-Hellman Key Exchange
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diffie-Hellman Key Exchange
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Getting Started</h1>
+
+<p>Suppose that 2 users want to share secret information but that their communication must be performed across a public (unsecure) channel (e.g. over the internet).</p>
+<p>If both users have access to the same shared secret key, then they can use this key in order to send encrypted messages across the public channel. </p>
+<pre><code class="language-python">&gt;&gt;&gt; from some_cool_cryptography_package import encrypt_message, decrypt_message
+&gt;&gt;&gt; shared_secret_key: int = 46_290 
+
+&gt;&gt;&gt; # user 1 encrypts a message #
+&gt;&gt;&gt; encrypted_message: str = encrypt_message(
+...     message=&quot;attack at midnight tonight&quot;, 
+...     secret_key=shared_secret_key
+... )
+
+&gt;&gt;&gt; # user 2 decrypts the message #
+&gt;&gt;&gt; decrypted_message: str = decrypt_message(
+...     encrypted_message, 
+...     secret_key=shared_secret_key
+... )
+&gt;&gt;&gt; print(decrypted_message)
+'attack at midnight tonight'
+</code></pre>
+<p>But how can both users share the same secure secret key (known only to the 2 of them) if the key must be communicated across a public (unsecure) channel?</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange">Diffie-Hellman-Merkle</a> algorithm provides an elegant solution, which works as follows:</p>
+<ol>
+<li>
+<p>The users decide on 2 shared numbers (integers) to use. These numbers can be shared across a public (unsecure) channel:</p>
+<ul>
+<li>
+<p>A shared modulus number <code>p</code> (which must be a prime number, and for security should be larger than 2048 bits)</p>
+</li>
+<li>
+<p>A shared base number <code>g</code> (which need not be big, but which needs to be a <a href="https://en.wikipedia.org/wiki/Primitive_root_modulo_n">primitive root modulo <em>p</em></a>)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Each user chooses their own private secret (integer) key, and does not share this with anyone. </p>
+</li>
+<li>
+<p>Each user combines their private secret key with the 2 shared public numbers using a simple arithmetic formula (<a href="https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange#Cryptographic_explanation">detail here</a>), and they then share the result of that communication with the other user across the public (unsecure) channel.</p>
+</li>
+<li>
+<p>Both users then combine the (now 4) public numbers with their own private secret key in order to generate a secure shared secret key (i.e. the users' private calculations both give the same result). This calculation also uses a very simple arithmetic formula - you can find the precise details <a href="https://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange#Cryptographic_explanation">here</a>.</p>
+</li>
+</ol>
+<p>Here is how this can be achieved using this python module:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from diffie_hellman_merkle.user import DiffieHellmanMerkle
+
+&gt;&gt;&gt; public_shared_modulus: int = 857_083
+&gt;&gt;&gt; public_shared_base: int = 2
+
+&gt;&gt;&gt; user1 = DiffieHellmanMerkle(
+...         shared_modulus=public_shared_modulus,
+...         shared_base=public_shared_base,
+...         personal_secret=69_420,
+... )
+&gt;&gt;&gt; user2 = DiffieHellmanMerkle(
+...         shared_modulus=public_shared_modulus,
+...         shared_base=public_shared_base,
+...         personal_secret=8_008_135,
+... )
+
+&gt;&gt;&gt; print(
+... &quot;Calculation result to share:\n&quot;,
+... &quot;    User 1: &quot;, user1.value_to_share, &quot;\n&quot;,
+... &quot;    User 2: &quot;, user2.value_to_share, &quot;\n&quot;,
+... )
+Calculation result to share:
+    User 1:  267629 
+    User 2:  187245
+</code></pre>
+<p>In the case of the 4 numbers used in this example (857083, 2, 267629, 187245), the shared secret key could be discovered using brute force, but if <code>p</code> were at least 2048 bits, then this would be infeasible for modern computers.</p>
+<pre><code class="language-python">&gt;&gt;&gt; user1.generate_shared_secret(received_value_to_share=user2.value_to_share)
+&gt;&gt;&gt; user2.generate_shared_secret(received_value_to_share=user1.value_to_share)
+&gt;&gt;&gt; print( user1.shared_secret == user2.shared_secret )
+True
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
+      
+    
+  </body>
+</html>
